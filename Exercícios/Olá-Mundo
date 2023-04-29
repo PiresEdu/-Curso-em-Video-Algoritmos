@@ -1,5 +1,7 @@
 algoritmo "Olá-Mundo"
-
+var
+   msg: caractere
 inicio
-      Escreva("Olá, Mundo")
+      msg <- "Olá, Mundo!"
+      EscrevaL(msg)
 fimalgoritmo
