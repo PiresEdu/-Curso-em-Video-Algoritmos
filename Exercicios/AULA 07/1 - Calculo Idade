@@ -1,0 +1,23 @@
+algoritmo "CalculoIdade"
+var
+   ano, nasc, idade, falta: Inteiro
+   singouplu: caractere
+inicio
+      Escreva("Em que ano estamos? ")
+      Leia(ano)
+      Escreva("Em que ano você nasceu? ")
+      Leia(nasc)
+      idade <- ano - nasc
+      EscrevaL("Em ", ano, " você terá ", idade," anos")
+      Se (idade >= 21) entao
+         Escreva("e já atingiu a maioridade!")
+      SeNao
+           falta <- (21 - idade)
+           Se falta <= 1 entao
+              singouplu <- "ano"
+           SeNao
+                singouplu <- "anos"
+           FimSe
+           Escreva("e ainda não atingiu a maioridade! Faltam", falta," ", singouplu)
+      Fimse
+fimalgoritmo
