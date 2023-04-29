@@ -1,0 +1,28 @@
+algoritmo "PartidaFutebol"
+var
+   B, M, DG: Inteiro
+inicio
+      EscrevaL("      BANGU X MADUREIRA      ")
+      EscrevaL("-----------------------------")
+      Escreva (" Quantos gols do BANGU? ")
+      Leia(B)
+      Escreva (" Quantos gols do MADUREIRA? ")
+      Leia(M)
+      EscrevaL("-----------------------------")
+      
+      Se B > M entao
+         DG <- B - M
+      SeNao
+           DG <- M - B
+      FimSe
+      EscrevaL(" DIFERENAÇA: ", DG)
+
+      Escolha DG
+              Caso 0
+                   EscrevaL(" STATUS: EMPATE")
+              Caso 1, 2, 3
+                   EscrevaL(" STATUS: PARTIDA NORMAL")
+              OutroCaso
+                       EscrevaL(" STATUS: GOLEADAAAA!!!")
+      FimEscolha
+fimalgoritmo
