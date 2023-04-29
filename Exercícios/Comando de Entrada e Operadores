@@ -1,0 +1,51 @@
+algoritmo "Operadores-Aritméticos"
+var
+ A, B: Real
+inicio
+ A <- 5
+ B <- 2
+
+ EscrevaL(" OPERADORES ARITMETICOS ")
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" ADIÇÃO ")
+ EscrevaL(A, " +", B, " = ", A+B)
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" SUBTRAÇÃO ")
+ EscrevaL(A, " -", B, " = ", A-B)
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" MULTIPLICAÇÃO ")
+ EscrevaL(A, " x", B, " = ", A*B)
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" DIVISÃO ")
+ EscrevaL(A, " ÷", B, " = ", A/B)
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" DIVISÃO INTEIRA ")
+ EscrevaL(A, " ÷", B, " = ", A\B)
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" MÓDULO ")
+ EscrevaL(A, " ÷", B, " = |",A Mod B," |")
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+ EscrevaL(" ORDEM DE PRECENDÊNCIA ")
+ EscrevaL()
+ EscrevaL("1º () Parênteses")
+ EscrevaL("2º ^  Exponenciação")
+ EscrevaL("3º * ou / Multiplicação ou Divisão")
+ EscrevaL("4º + ou - Adição ou Subtração ")
+ EscrevaL()
+ EscrevaL("----------------------")
+ EscrevaL()
+
+fimalgoritmo
