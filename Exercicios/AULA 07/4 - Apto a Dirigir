@@ -1,0 +1,23 @@
+algoritmo "AptoDirigir"
+var
+   AA, AN, ID: Inteiro
+inicio
+      EscrevaL("--------------------------------")
+      EscrevaL("    DEPARTAMENTO DE TRÂNSITO    ")
+      EscrevaL("--------------------------------")
+      Escreva(" Ano Atual (yyyy): ")
+      Leia(AA)
+      Escreva(" Ano de Nascimento (yyyy): ")
+      Leia(AN)
+      
+      ID <- AA - AN
+      
+      EscrevaL("------------ STATUS ------------")
+      EscrevaL(" IDADE: ", ID, " ANOS")
+      Se (ID >= 18) entao
+         EscrevaL(" APTO A TIRAR CARTEIRA")
+      SeNao
+           EscrevaL(" INAPTO A TIRAR CARTEIRA")
+      FimSe
+      EscrevaL("--------------------------------")
+fimalgoritmo
