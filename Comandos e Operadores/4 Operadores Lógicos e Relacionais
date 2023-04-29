@@ -1,0 +1,31 @@
+algoritmo "Operadores Lógicos e Relacionais"
+var
+
+inicio
+
+      EscrevaL()
+      EscrevaL("OPERADORES RELACIONAIS")
+      EscrevaL()
+      EscrevaL(" Maior que > ")
+      EscrevaL(" Menor que < ")
+      EscrevaL(" Maior ou igual a >= ")
+      EscrevaL(" Menor ou igual a <= ")
+      EscrevaL(" Igual a = ")
+      EscrevaL(" Diferente de <> ")
+      EscrevaL()
+      EscrevaL("-----------------------")
+      EscrevaL()
+      EscrevaL("OPERADORES LÓGICOS")
+      EscrevaL()
+      EscrevaL(" 'E' = Queremos uma coisa e outra, não adianta apenas uma ")
+      EscrevaL(" 'OU' = Queremos uma coisa ou outra, tanto faz qual seja")
+      EscrevaL(" 'NAO' = Inversão do resultado")
+      EscrevaL()
+      EscrevaL("ORDEM DE PRECENDÊNCIA")
+      EscrevaL()
+      EscrevaL(" 1º Aritimeticos: () | ^ | */ | +-  ")
+      EscrevaL(" 2º Relacionais: TODOS ")
+      EscrevaL(" 3º Lógicos: E | OU | NÃO ")
+      
+
+fimalgoritmo
