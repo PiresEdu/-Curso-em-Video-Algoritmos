@@ -1,0 +1,16 @@
+algoritmo "CREUZA_05"
+var
+   valor, emprestimo, valorparcela: Real
+   parcela:Inteiro
+inicio
+      Escreva("Qual o valor do empréstimo? R$")
+      Leia(valor)
+      Escreva("Quantas parcelas? ")
+      Leia (parcela)
+      
+      emprestimo <- valor + (valor*20/100)
+      valorparcela <- emprestimo / parcela
+      
+      Escreva("Vou pagar ", parcela, " parcelas de R$", valorparcela)
+
+fimalgoritmo
