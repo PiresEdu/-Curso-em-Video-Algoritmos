@@ -1,0 +1,30 @@
+algoritmo "MelhorAluno"
+var
+   A, C: Inteiro
+   NA, MN: Real
+   N, MA: Caractere
+inicio
+      EscrevaL("*******************************")
+      EscrevaL("        ESCOLA DO PIRES        ")
+      EscrevaL("*******************************")
+      Escreva (" Quantos alunos  a turma tem?  ")
+      Leia (A)
+      
+      C <- 1
+      Enquanto (C <= A) faca
+        EscrevaL("*******************************")
+        EscrevaL("            ALUNO ", C)
+        Escreva (" NOME: ")
+        Leia (N)
+        Escreva (" NOTA: ")
+        Leia (NA)
+        Se (NA > MN) entao
+           MN <- NA
+           MA <- N
+        FimSe
+        C <- C + 1
+      FimEnquanto
+      
+      EscrevaL(" O melhor aproveitamento foi de ", MA, " com a nota ", MN)
+
+fimalgoritmo
