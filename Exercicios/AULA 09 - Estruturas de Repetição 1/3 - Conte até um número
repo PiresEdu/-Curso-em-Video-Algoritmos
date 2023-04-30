@@ -1,0 +1,16 @@
+algoritmo "ConteAte?"
+
+var
+   Contador, N, S: Inteiro
+inicio
+      Contador <- 0
+      Escreva("Quer contar até quanto? ")
+      Leia (N)
+      Escreva("Qual o valor do salto? ")
+      Leia(S)
+      Enquanto (Contador <= N) faca
+               EscrevaL(contador)
+               Contador <- Contador + S
+      FimEnquanto
+      EscrevaL("Terminei de contar!")
+fimalgoritmo
