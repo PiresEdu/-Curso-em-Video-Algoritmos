@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   I, F, C: Inteiro
+inicio
+
+      EscrevaL("-----------------------------------")
+      EscrevaL("       CONTAGEM  INTELIGENTE       ")
+      EscrevaL("-----------------------------------")
+
+      Escreva("Início: ")
+      Leia(I)
+      Escreva("Final: ")
+      Leia (F)
+      
+      EscrevaL("-----------------------------------")
+      EscrevaL("          C O N T A N D O          ")
+      EscrevaL("-----------------------------------")
+
+
+      Se (I > F) entao
+         C <- I - F
+         Enquanto  (C >= 0) faca
+                   Escreva(" ", I, ".. ")
+                   C <- C - 1
+                   I <- I - 1
+         FimEnquanto
+      SeNao
+           C <- F - I
+           Enquanto  (C >= 0) faca
+                   Escreva(" ", I, ".. ")
+                   C <- C - 1
+          I <- I + 1
+           FimEnquanto
+      FimSe
+      
+fimalgoritmo
