@@ -1,0 +1,16 @@
+algoritmo "Negativos"
+var
+   N, C, TN: Inteiro
+inicio
+      C <- 1
+      TN <- 0
+      Repita
+         Escreva("Digite um número: ")
+         Leia(N)
+         Se  (N < 0) entao
+             TN <- TN + 1
+         FimSe
+         C <- C + 1
+      Ate (C > 5)
+      EscrevaL("Foram digitados ", TN, " números negativos!")
+fimalgoritmo

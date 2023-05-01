@@ -1,0 +1,15 @@
+algoritmo "ContRepita"
+var
+   C, N, R, M: Inteiro
+inicio
+      C <- 1
+      Escreva("Deseja tabuada de qual número? ")
+      Leia (N)
+      Escreva("Multiplicado até qual número? ")
+      Leia(M)
+      Repita
+        R <- N * C
+        EscrevaL(N, " X ", C, " = ", R)
+        C <- C + 1
+      Ate (C > M)
+fimalgoritmo
