@@ -1,0 +1,14 @@
+algoritmo "QuaisEntre0e10"
+
+var
+  C, V,T: Inteiro
+inicio
+   Para C <- 1 ate 6 faca
+      Escreva(" Digite um valor: ")
+      Leia(V)
+      Se (V >= 0) e (V <=10) entao
+         T <- T + 1
+      FimSe
+   FimPara
+   EscrevaL(" Ao total obtemos: ", T, " números entre 1 e 10")
+fimalgoritmo
