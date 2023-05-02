@@ -1,0 +1,26 @@
+algoritmo "Analisador"
+var
+  C, V, S, D, N, SP: Inteiro
+  M: Real
+inicio
+      Para C := 1 ate 5 faca
+         Escreva(" Digite o ", C, "º valor: ")
+         Leia(V)
+         S <- S + V
+         Se (V Mod 5 = 0) entao
+            D <- D + 1
+         FimSe
+         Se (V = 0) entao
+           N <- N + 1
+         FimSe
+         Se (V Mod 2 = 0) entao
+           SP <-  SP + V
+          FimSe
+      FimPara
+      M <- S/5
+      EscrevaL(" A SOMA foi de: ", S)
+      EscrevaL(" A MÉDIA foi de: ", M)
+      EscrevaL(" Valores divisiveis por 5: ", D)
+      EscrevaL(" Valores Nulos: ", N)
+      EscrevaL(" Soma Valores Pares: ", SP)
+fimalgoritmo

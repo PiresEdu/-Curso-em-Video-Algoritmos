@@ -1,0 +1,15 @@
+algoritmo "Fibonacci"
+var
+ C, N1, N2, F: Inteiro
+inicio
+      N1 <- 0
+      Escreva(N1)
+      N2 <- 1
+      Escreva(N2)
+      Para C de 3 ate 15 faca
+        F <- N1 + N2
+        Escreva(F)
+        N1  := N2
+        N2  := F
+      FimPara
+fimalgoritmo
