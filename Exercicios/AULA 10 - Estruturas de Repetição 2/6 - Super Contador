@@ -1,0 +1,40 @@
+algoritmo "SuperContador"
+var
+   C, N: Inteiro
+inicio
+    Repita
+      EscrevaL("")
+      EscrevaL("-------------------")
+      EscrevaL("|     M E N U     |")
+      EscrevaL("-------------------")
+      EscrevaL("")
+      EscrevaL("| [1] De 1 Até 10 |")
+      EscrevaL("| [2] De 10 Até 1 |")
+      EscrevaL("| [3] Sair        |")
+      EscrevaL("-------------------")
+      Leia (N)
+      
+      Escolha N
+      
+       Caso 1
+         C <- 0
+         Enquanto (C < 10) faca
+           C <- (C + 1)
+           Escreva (C, "...")
+         FimEnquanto
+         
+       Caso 2
+         C <- 11
+         Repita
+           C <- (C - 1)
+           Escreva (C, "...")
+         Ate (C = 1)
+       
+       Caso 3
+         EscrevaL(" SAINDO... ")
+         
+       OutroCaso
+         EscrevaL(" INVÁLIDO!!! ")
+      FimEscolha
+    Ate (N = 3)
+FimAlgoritmo

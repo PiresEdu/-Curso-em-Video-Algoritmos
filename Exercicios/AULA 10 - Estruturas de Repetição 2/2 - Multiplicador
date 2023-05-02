@@ -1,4 +1,4 @@
-algoritmo "ContRepita"
+algoritmo "Multiplicador"
 var
    C, N, R, M: Inteiro
 inicio

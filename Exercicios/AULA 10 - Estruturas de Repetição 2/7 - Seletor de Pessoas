@@ -1,0 +1,45 @@
+algoritmo "SeletorDePessoas"
+var
+  gen, resp: Caractere
+  idade, cabelo, EM, EF: Inteiro
+inicio
+ EM <- 0
+ EF <- 0
+ Repita
+  EscrevaL("")
+  EscrevaL("======================")
+  EscrevaL("  SELETOR DE PESSOAS  ")
+  EscrevaL("======================")
+  Escreva (" Qual o Genêro? [M/F] ")
+  Leia(gen)
+  Escreva (" Qual a idade? ")
+  Leia(idade)
+  EscrevaL(" Qual a cor do cabelo? ")
+  EscrevaL("======================")
+  EscrevaL(" [1] PRETO ")
+  EscrevaL(" [2] CASTANHO ")
+  EscrevaL(" [3] LOIRO ")
+  EscrevaL(" [4] RUIVO ")
+  Escreva (" Digite a opção acima: ")
+  Leia(cabelo)
+  Escolha cabelo
+    Caso 2
+      Se (gen = "M") e (idade > 18) entao
+         EM <- EM + 1
+      FimSe
+    Caso 3
+      Se (gen = "F") entao
+       Se( idade >=25) e (idade <=30) entao
+          EF <- EF + 1
+       FimSe
+      FimSe
+  FimEscolha
+  Escreva (" Quer continuar? [S/N]")
+  Leia(resp)
+  Se (resp = "S")entao
+    LimpaTela
+  FimSe
+ Ate (resp = "N")
+ EscrevaL("Total de homens com mais de 18 e cabelos castanhos = ", EM)
+ EscrevaL("Total de mulheres entre 25 e 30 e cabelos loiros = ", EF)
+fimalgoritmo
