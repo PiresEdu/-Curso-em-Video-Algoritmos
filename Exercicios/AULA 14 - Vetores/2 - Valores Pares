@@ -7,14 +7,13 @@ inicio
    Para i <- 1 ate 7 faca
       Escreva(" Digite o", i, "º valor: ")
       Leia(val[i])
-      Se (val[i] % 2 = 0) entao
-         TP <- TP + 1
-      FimSe
    FimPara
-   Escreval(" Total de pares foi", TP)
+
    Para i <- 1 ate 7 faca
       Se(val[i] % 2 = 0) entao
+         TP <- TP + 1
          EscrevaL(" Valor PAR na ", i,"º posição")
       FimSe
    FimPara
+   Escreval(" Total de pares foi", TP)
 fimalgoritmo
