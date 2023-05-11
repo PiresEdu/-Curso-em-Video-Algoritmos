@@ -12,4 +12,9 @@ inicio
       FimSe
    FimPara
    Escreval(" Total de pares foi", TP)
+   Para i <- 1 ate 7 faca
+      Se(val[i] % 2 = 0) entao
+         EscrevaL(" Valor PAR na ", i,"º posição")
+      FimSe
+   FimPara
 fimalgoritmo
