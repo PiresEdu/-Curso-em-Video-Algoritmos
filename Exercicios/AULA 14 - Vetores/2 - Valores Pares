@@ -1,0 +1,15 @@
+algoritmo "Valores Pares"
+var
+   val: vetor[1..7] de Inteiro
+   i, TP: Inteiro
+inicio
+   TP <- 0
+   Para i <- 1 ate 7 faca
+      Escreva(" Digite o", i, "º valor: ")
+      Leia(val[i])
+      Se (val[i] % 2 = 0) entao
+         TP <- TP + 1
+      FimSe
+   FimPara
+   Escreval(" Total de pares foi", TP)
+fimalgoritmo
