@@ -1,0 +1,65 @@
+algoritmo "Corrigindo Provas"
+
+var
+   gabarito: vetor[1..5] de Caractere
+   prova: vetor[1..5] de Caractere
+   nome: vetor[1..3] de Caractere
+   nota: vetor[1..3] de Real
+   n: Inteiro
+   s, m: Real
+
+Procedimento CadastroGabarito()
+var
+   c: Inteiro
+inicio
+   EscrevaL(" Cadastro de Gabarito ")
+   EscrevaL(" -------------------- ")
+   Para c <- 1 ate 5 faca
+      Escreva(c,"º Questão: ")
+      Leia(gabarito[c])
+   FimPara
+FimProcedimento
+
+Funcao CadastraProva(): Real
+var
+   c: Inteiro
+   notaFinal: Real
+inicio
+    notaFinal <- 0
+    EscrevaL(" RESPOSTAS DADAS")
+    EscrevaL("")
+    Para c <- 1 ate 5 faca
+      Escreva(c,"º Questão: ")
+      Leia(prova[c])
+      Se (Maiusc(prova[c]) = Maiusc(gabarito[c])) entao
+         notaFinal <- notaFinal + 2
+      FimSe
+   FimPara
+   Retorne notaFinal
+FimFuncao
+
+inicio
+    CadastroGabarito()
+
+    Para n <- 1 ate 3 faca
+         LimpaTela
+         EscrevaL(" ----------------------- ")
+         EscrevaL(" ALUNO ", n)
+         EscrevaL(" ----------------------- ")
+         Escreva(" Nome: ")
+         Leia(nome[n])
+         EscrevaL("")
+         nota[n] <- CadastraProva()
+         s <- s + nota[n]
+    FimPara
+
+    LimpaTela
+    EscrevaL(" NOTAS FINAIS ")
+    EscrevaL(" ------------ ")
+    Para n <- 1 ate 3 faca
+       EscrevaL( nome[n]:10, nota[n]:4:1)
+    FimPara
+    m <- s / 3
+    EscrevaL(" --------------------- ")
+    EscrevaL(" Media da Turma: ", M:4:1)
+fimalgoritmo
