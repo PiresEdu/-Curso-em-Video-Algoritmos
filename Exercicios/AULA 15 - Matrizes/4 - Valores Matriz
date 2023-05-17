@@ -1,0 +1,39 @@
+algoritmo "Valores Matriz"
+
+var
+  m: vetor[1..4, 1..4] de Inteiro
+  i, j, SDP, P2L, M3C: Inteiro
+inicio
+   SDP <- 0
+   P2L <- 1
+   Para i <- 1 ate 4 faca
+      Para j <- 1 ate 4 faca
+         Escreva("Digite o valor da Posicao [", i, ",", j, "]: ")
+         Leia(m[i,j])
+         Se (i = j) entao
+            SDP <- SDP + m[i,j]
+         FimSe
+      FimPara
+   FimPara
+
+   Para i <- 1 ate 4 faca
+      Para j <- 1 ate 4 faca
+         Escreva(m[i,j]:4)
+      FimPara
+      EscrevaL()
+   FimPara
+
+   Para j <- 1 ate 4 faca
+      P2L <- P2L * m[2,j]
+   FimPara
+
+   Para i <- 1 ate 4 faca
+      Se (m[i,3] > M3C) entao
+         M3C <- m[i,3]
+      FimSe
+   FimPara
+
+   EscrevaL("A soma dos valores da Diagonal Principal e ", SDP)
+   EscrevaL("O produto dos valores da Segunda Linha e ", P2L)
+   EscrevaL("O maior valor da Terceira Coluna e ", M3C)
+fimalgoritmo
